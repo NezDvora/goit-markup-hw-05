@@ -15,19 +15,19 @@
 </head>
 
 <body>
-<header class="page-header"> 
+<header class="page-header header-border"> 
     <nav class="container">
     <div class="main-nav header-container">
     <a class="logo" href="./index.html"> <span class="logo-style">Web</span>Studio</a> 
     <ul class="site-nav list">
-        <li class="item">
-            <a class="link" href="">Studio</a>
+        <li class="item item-nav">
+            <a class="link item-elements" href="">Studio</a>
         </li>
-        <li class="item">
-            <a class="link" href="./portfolio.html">Portfolio</a>
+        <li class="item item-nav">
+            <a class="link item-elements" href="./portfolio.html">Portfolio</a>
         </li>
-        <li class="item">
-            <a class="link" href="">Contacts</a>
+        <li class="item item-nav">
+            <a class="link item-elements" href="">Contacts</a>
         </li>
     </ul>
     <address class="nav"> 
@@ -48,7 +48,7 @@
         <section class="hero overlay">
         <div class="container hero-container">
             <h1 class="hero-title">Effective Solutions for Your Business</h1>
-            <button class="button-submit">Order Service</button>
+            <button class="button-submit" data-modal-open>Order Service</button>
         </div>
         </section>
 
@@ -384,5 +384,16 @@
     </div>
 </div>
 </footer>
+
+<div class="backdrop" data-modal>
+    <div class="modal">
+        <button type="button" class="modal-close-btn" data-modal-close>
+        <svg class="modal-close-btn-icon" width="8" height="8">
+            <use href="./images/symbol-defs.svg#icon-close-black-modal"></use>
+        </svg>
+        </button>
+    </div>
+</div>
+<script src="./js/modal.js"></script>
 </body>
 </html>
