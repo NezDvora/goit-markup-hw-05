@@ -150,12 +150,12 @@ body {
   color: var(--secondary-text-color);
 }
 
-.site-nav__link--current {
+.site-nav_link_current {
   position: relative;
-  color: var(--accent-color);
+  color: var(--secondary-accent-color);
   }
   
-  .site-nav__link--current::after {
+  .site-nav_link_current::after {
   content: '';
   position: absolute;
   display: block;
@@ -167,7 +167,7 @@ body {
   bottom: 0;
   
   border-radius: 2px;
-  background-color: var(--accent-color);
+  background-color: var(--secondary-accent-color);
   }
 
 /*------------------------Phone number at Email------------------------*/
