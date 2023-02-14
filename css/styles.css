@@ -120,10 +120,10 @@ body {
   top: 68px;
   background: var(--secondary-accent-color);
   border-radius: 2px;
-  transition: var(--function-timing), var(--function-duration);
 }
 
 .item-nav{
+  transition: var(--function-timing), var(--function-duration);
   position: relative;
 }
 
@@ -149,6 +149,26 @@ body {
 
   color: var(--secondary-text-color);
 }
+
+.site-nav__link--current {
+  position: relative;
+  color: var(--accent-color);
+  }
+  
+  .site-nav__link--current::after {
+  content: '';
+  position: absolute;
+  display: block;
+  
+  width: 100%;
+  height: 4px;
+  
+  left: 0;
+  bottom: 0;
+  
+  border-radius: 2px;
+  background-color: var(--accent-color);
+  }
 
 /*------------------------Phone number at Email------------------------*/
 .nav {
@@ -516,6 +536,7 @@ text-align: center;
 
 .list-elements {
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08);
+  transition: var(--function-timing), var(--function-duration);
 }
 
 .list-elements:hover,
